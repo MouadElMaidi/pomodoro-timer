@@ -1,0 +1,85 @@
+.App {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.length-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.length-picker-container {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.timer-container {
+  border: 7px solid white;
+  border-radius: 40px;
+  width: 500px;
+  height: 280px;
+  background: 0;
+}
+
+
+
+.battery-front {
+  position: absolute;
+  background: white;
+  left: 100%;
+  top: 50%;
+  transform:translateY(-50%); 
+  width: 8%;
+  height: 120px;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}
+
+.percentage-display {
+  font-size: 2rem;
+}
+
+
+.control-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  font-size: 25px;
+}
+
+.rangePicker {
+  text-align: center;
+}
+
+.rangePicker > .form-label {
+  font-size: 1.5rem;
+}
+
+.length-num {
+  font-weight: light;
+  font-size: 1rem;
+}
+
+.controls {
+  cursor: pointer;
+}
